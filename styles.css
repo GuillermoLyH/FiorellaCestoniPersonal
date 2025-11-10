@@ -461,6 +461,26 @@ span {
   font-style: italic;
 }
 
+.social-icons {
+    display: flex; 
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 15px 20px;
+   
+}
+
+.social-icons a {
+    display: inline-block;
+    border-bottom: none !important; 
+    padding: 0;
+    color: var(--nosense);
+    transition: color 0.3s ease;
+}
+
+.social-icons a i {
+    font-size: 1.5em; 
+}
+
 @media (min-width: 600px) {
   .hamburger-menu {
     display: none;
@@ -581,7 +601,37 @@ span {
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .menu-links {
+        /* Permite que el contenido interno (enlaces + social-icons) se ajuste */
+        justify-content: space-between; 
+        width: auto;
+    }
+    
+    /* 2. Estilizar el contenedor de íconos para la barra horizontal */
+    .social-icons {
+        /* Se alinea a la derecha de los enlaces */
+        order: 2; /* Se posiciona después de los enlaces de nav */
+        padding: 0;
+        margin-left: 20px; /* Separación de los enlaces de nav */
+        border-top: none; /* Quitamos el separador móvil */
+    }
+
+    .social-icons a {
+        color: var(--bg-light-pink); /* Color claro para la barra de nav oscura */
+        padding: 0 5px; /* Espaciado ajustado */
+    }
+    
+    .social-icons a i {
+        font-size: 1.25em; /* Tamaño de ícono un poco más pequeño en desktop */
+    }
+
+    /* 3. Ajuste del NAV BAR para acomodar los íconos y enlaces */
+    .navBar {
+        justify-content: center;
+    }
 }
+
 
 @media (min-width: 1024px) {
   .portfolio > div {
@@ -745,4 +795,19 @@ span {
   h2 {
     font-size: 2em;
   }
+
+  .social-icons {
+        gap: 15px; /* Reducimos la separación entre los íconos */
+        margin-left: 40px; /* Mayor separación de los enlaces principales */
+    }
+
+    .social-icons a i {
+        font-size: 1.4em; /* Íconos un poco más grandes para desktop */
+    }
+    
+    /* Si quieres que el logo-nav, enlaces y íconos estén en los extremos */
+    .navBar {
+        justify-content: center; 
+    }
+
 }
