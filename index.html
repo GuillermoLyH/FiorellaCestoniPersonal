@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiorella Cestoni</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="icon" type="image/png" href="img/navLogo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
   </head>
   <body>
     <header class="head">
@@ -24,15 +27,6 @@
           <a href="#services">Servicios</a>
           <a href="#aboutMe">Sobre Mí</a>
           <a href="#contacto">Contacto</a>
-
-          <div class="social-icons">
-            <a href="https://www.instagram.com/fiorellacestoni_?igsh=Nmt2bDlhZmtubnZx" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@fiore_cestoni?_r=1&_t=ZM-91HeFoUuILw" target="_blank" aria-label="TikTok">
-                <i class="fab fa-tiktok"></i>
-            </a>
-        </div>
         </div>
       </nav>
       <img class="logo" src="img/mainLogo.png" alt="Logo" />
@@ -43,12 +37,24 @@
       <section id="portfolio" class="portfolio">
         <h2>Portafolio</h2>
         <div>
-          <a href="portfolio/amorin.html"><img src="img/portfolio1.JPG" alt="Opcion 1" /></a>
-          <a href="portfolio/nayade.html"><img src="img/portfolio2.jpg" alt="Opcion 2" /></a>
-          <a href="portfolio/floral.html"><img src="img/portfolio3.jpeg" alt="Opcion 3" /></a>
-          <a href="portfolio/sonirio.html"><img src="img/portfolio4.JPG" alt="Opcion 4" /></a>
-          <a href="portfolio/hilos.html"><img src="img/portfolio5.JPG" alt="Opcion 5" /></a>
-          <a href="portfolio/glamour.html"><img src="img/portfolio6.jpg" alt="Opcion 6" /></a>
+          <a href="portfolio/amorin.html"
+            ><img src="img/portfolio1.JPG" alt="Opcion 1"
+          /></a>
+          <a href="portfolio/nayade.html"
+            ><img src="img/portfolio2.jpg" alt="Opcion 2"
+          /></a>
+          <a href="portfolio/floral.html"
+            ><img src="img/portfolio3.jpeg" alt="Opcion 3"
+          /></a>
+          <a href="portfolio/sonirio.html"
+            ><img src="img/portfolio4.JPG" alt="Opcion 4"
+          /></a>
+          <a href="portfolio/hilos.html"
+            ><img src="img/portfolio5.JPG" alt="Opcion 5"
+          /></a>
+          <a href="portfolio/glamour.html"
+            ><img src="img/portfolio6.jpg" alt="Opcion 6"
+          /></a>
         </div>
       </section>
       <section id="services" class="services">
@@ -85,25 +91,55 @@
           sentirnos únicos y especiales con lo que nos ponemos y es por eso que
           con mis productos eso es lo que se siente, felicidad, calidez y amor.
         </p>
+        <div class="social-icons-container">
+          <a href="https://www.instagram.com/fiorellacestoni_?igsh=Nmt2bDlhZmtubnZx" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram instagram-icon"></i>
+          </a>
+          <a href="https://www.tiktok.com/@fiore_cestoni?_r=1&_t=ZM-91HeFoUuILw" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok tiktok-icon"></i>
+          </a>
+        </div>
       </section>
       <section id="contacto" class="form">
         <h2>Contacto</h2>
         <p>¿Quieres colaborar o adquirir una pieza única? Escríbeme</p>
-        <form class="formulario-contacto" action="https://formspree.io/f/mkgkwdqk" method="POST">
-    <div class="campo-contenedor">
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-    </div>
+        <form
+          class="formulario-contacto"
+          action="https://formspree.io/f/mkgkwdqk"
+          method="POST"
+        >
+          <div class="campo-contenedor">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
 
-    <div class="campo-contenedor">
-        <input type="email" id="correo" name="_replyto" placeholder="Correo electrónico" required> 
-    </div>
+          <div class="campo-contenedor">
+            <input
+              type="email"
+              id="correo"
+              name="_replyto"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
 
-    <div class="campo-contenedor">
-        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="8" required></textarea>
-    </div>
+          <div class="campo-contenedor">
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Mensaje"
+              rows="8"
+              required
+            ></textarea>
+          </div>
 
-    <button type="submit" class="boton-enviar">Enviar</button>
-</form>
+          <button type="submit" class="boton-enviar">Enviar</button>
+        </form>
       </section>
     </footer>
     <script src="script.js"></script>
