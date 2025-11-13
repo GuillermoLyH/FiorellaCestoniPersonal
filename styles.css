@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Matcha";
-  src: url("fonts/matcha.ttf") format("truetype");
+  src: url("/fonts/matcha.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Dream Fever";
-  src: url("fonts/dream.ttf") format("truetype");
+  src: url("/fonts/dream.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -135,7 +135,6 @@ html {
 .hamburger-menu.is-active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
 
 .head {
   display: flex;
@@ -463,75 +462,64 @@ span {
 }
 
 .portfolio-item {
-    position: relative;
-    width: 280px; /* Mantener el ancho de la imagen original */
-    height: 280px; /* Mantener la altura de la imagen original */
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    display: block; /* Asegura que el enlace se comporte como un bloque */
-    text-decoration: none; /* Quita el subrayado del enlace */
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: block;
+  text-decoration: none;
 }
 
-/* Duplica el pseudo-elemento para el oscurecimiento */
 .portfolio-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Oscurecimiento inicial */
-    border-radius: inherit;
-    transition: background-color 0.3s ease;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
+  transition: background-color 0.3s ease;
+  z-index: 1;
 }
 
-/* Estilo para el texto del título */
 .portfolio-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--white);
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    z-index: 2;
-    padding: 0 10px;
-    font-family: var(--font-family); /* Usa la fuente principal */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  padding: 0 10px;
+  font-family: var(--font-family);
 }
 
-/* Ajuste de la imagen dentro del contenedor */
 .portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease; /* Para el efecto de zoom en hover (desktop) */
-    border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: inherit;
 }
 
 .logo-nav {
-    /* Define el tamaño en móvil (ejemplo: 40px) */
-    width: 40px; 
-    height: 40px;
-    /* Asegura que no tenga borde o margen indeseado */
-    display: block; 
+  width: 40px;
+  height: 40px;
+
+  display: block;
 }
 
 .navBar {
-    /* Ajusta la alineación para el logo y la hamburguesa */
-    justify-content: space-between; 
-    /* El logo-nav-link se colocará a la izquierda, la hamburguesa a la derecha. 
-       Alternativamente, puedes usar 'flex-start' si quieres que el logo y la hamburguesa
-       estén cerca, pero 'space-between' es común para móviles. */
-    padding: 10px 20px; /* Reducimos el padding vertical para un nav más compacto */
+  justify-content: space-between;
 }
 
-/* Ajuste del menú para la nueva altura del nav */
 .head {
-    /* Aumenta el padding-top para compensar el fixed navbar, ajusta el valor */
-    padding-top: 60px; /* Ajuste basado en el nuevo padding de 10px arriba/abajo */
+  padding-top: 60px;
 }
 
 @media (min-width: 600px) {
@@ -656,28 +644,23 @@ span {
   }
 
   .navBar {
-        /* Cambia la justificación cuando la hamburguesa se oculta */
-        justify-content: flex-start;
-        gap: 30px; /* Espacio entre el logo y los enlaces */
-        padding: 15px 40px; /* Más padding para desktop/tablet */
-    }
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px 40px;
+  }
 
-    .logo-nav {
-        /* Un poco más grande si lo deseas, o mantener el tamaño */
-        width: 40px; 
-        height: 40px;
-    }
+  .logo-nav {
+    width: 40px;
+    height: 40px;
+  }
 
-    .menu-links {
-        /* Asegura el espacio después del logo */
-        margin-left: 0; 
-    }
+  .menu-links {
+    margin-left: 0;
+  }
 
-    /* Ajuste de padding-top para el header */
-    .head {
-        padding-top: 75px; /* Ajusta este valor si el nav tiene 45px de alto + padding */
-    }
-
+  .head {
+    padding-top: 75px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -839,31 +822,27 @@ span {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  
-
   h2 {
     font-size: 2em;
   }
 
   .portfolio-item:hover::before {
-    background-color: rgba(0, 0, 0, 0.6); /* Oscurece más en hover */
-}
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 
-.portfolio-item:hover img {
-        transform: scale(1.03); /* Mueve el zoom de la imagen al contenedor */
-    }
-.navBar {
-        padding: 20px 80px; /* Más padding horizontal en desktop */
-    }
-    
-    .logo-nav {
-        width: 45px; 
-        height: 45px;
-    }
+  .portfolio-item:hover img {
+    transform: scale(1.03);
+  }
+  .navBar {
+    padding: 20px 80px;
+  }
 
-    /* Ajuste de padding-top para el header */
-    .head {
-        padding-top: 90px; /* Ajusta el padding superior si el nav es más alto */
-    }
-    
+  .logo-nav {
+    width: 45px;
+    height: 45px;
+  }
+
+  .head {
+    padding-top: 90px;
+  }
 }
