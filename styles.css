@@ -217,7 +217,6 @@ section h2 {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius: 25px;
   border: 3px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -323,7 +322,6 @@ section h2 {
 .service-item {
   position: relative;
   width: 300px;
-  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -344,7 +342,6 @@ section h2 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: inherit;
   transition: background-color 0.3s ease;
   z-index: 1;
 }
@@ -436,7 +433,6 @@ h3 {
   height: 280px;
   object-fit: cover;
 
-  border-radius: 20px;
   border: 3px solid var(--color-claro-secundario);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -450,7 +446,6 @@ h3 {
   height: 280px;
   object-fit: cover;
 
-  border-radius: 20px;
   border: 3px solid var(--color-claro-secundario);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   margin-bottom: 1em;
@@ -465,7 +460,6 @@ span {
   position: relative;
   width: 280px;
   height: 280px;
-  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   display: block;
@@ -522,6 +516,11 @@ span {
   padding-top: 60px;
 }
 
+.menu-links a i {
+  font-size: 1.2em;
+  margin: 0;
+}
+
 @media (min-width: 600px) {
   .hamburger-menu {
     display: none;
@@ -555,10 +554,6 @@ span {
 
   .navBar {
     justify-content: space-between;
-  }
-
-  .service-item:hover::before {
-    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .portfolio > div {
@@ -844,5 +839,52 @@ span {
 
   .head {
     padding-top: 90px;
+  }
+
+  .service-item:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+
+  .aboutMe img {
+    width: 40%;
+    height: 600px;
+    border-radius: 0;
+    object-fit: cover;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    background-color: #faebeb;
+    margin-right: 50px;
+  }
+
+  .aboutMe h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+  }
+
+  .aboutMe p {
+    max-width: 100%;
+    margin: 1em;
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  .aboutMe-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
   }
 }
