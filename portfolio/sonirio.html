@@ -55,9 +55,42 @@
     </header>
     <main class="sonirio general">
       <h3>Sonirio</h3>
-      <section>
+
+      <div class="carousel-container">
+        <button class="carousel-btn prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide active">
+              <img src="../sonirio/one.webp" alt="img1" />
+            </li>
+            <li class="carousel-slide">
+              <img src="../sonirio/two.webp" alt="img2" />
+            </li>
+            <li class="carousel-slide">
+              <img src="../sonirio/tree.webp" alt="img3" />
+            </li>
+            <li class="carousel-slide">
+              <img src="../sonirio/four.webp" alt="img4" />
+            </li>
+            <li class="carousel-slide">
+              <img src="../sonirio/five.webp" alt="img5" />
+            </li>
+            <li class="carousel-slide">
+              <img src="../sonirio/six.webp" alt="img6" />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-btn next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <section class="hide-on-desktop">
         <img class="first" src="../sonirio/one.webp" alt="img1" />
       </section>
+
       <p>
         Dos flores en un mismo tallo, unidas desde el primer brote, reflejan un
         amor que florece con alegría y ternura. "Florecita mía", dice la voz que
@@ -74,12 +107,13 @@
         tradición, aprendizaje y afecto en una propuesta de profundo valor
         simbólico.
       </p>
-      <section class="general-grid two-cols centered">
+
+      <section class="general-grid two-cols centered hide-on-desktop">
         <img src="../sonirio/two.webp" alt="img2" />
         <img src="../sonirio/tree.webp" alt="img3" />
       </section>
 
-      <section class="general-grid three-cols">
+      <section class="general-grid three-cols hide-on-desktop">
         <img src="../sonirio/four.webp" alt="img4" />
         <img src="../sonirio/five.webp" alt="img5" />
         <img src="../sonirio/six.webp" alt="img6" />
